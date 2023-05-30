@@ -9,7 +9,7 @@ const app = express();
 db();
 
 //import routes
-const employeesRoutes = require('./routes/employees.routes');
+const employeeRoutes = require('./routes/employees.routes');
 
 
 
@@ -23,7 +23,7 @@ app.get('/',(req,res)=>{
 //middlewares
 app.use(express.json());
 app.use(cors());
-app.use("/api",employeesRoutes);
+app.use("/api",employeeRoutes);
 
 
 
